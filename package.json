@@ -1,0 +1,38 @@
+{
+  "name": "generator-sanji-framer",
+  "version": "0.0.0",
+  "description": "Custom webapp for ThingsPro App Market",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "Sanji-IO/generator-sanji-framer",
+  "author": {
+    "name": "Zack Yang",
+    "email": "zack9433@gmail.com",
+    "url": "https://github.com/zack9433"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "sanji"
+  ],
+  "dependencies": {
+    "chalk": "~1.1.1",
+    "github": "~0.2.4",
+    "lodash": "~3.10.1",
+    "npm-name": "~1.1.1",
+    "superb": "~1.2.0",
+    "underscore.string": "~3.2.0",
+    "uuid": "~2.0.1",
+    "yeoman-generator": "~0.20.3",
+    "yeoman-option-or-prompt": "~1.0.2",
+    "yosay": "~1.0.5"
+  },
+  "devDependencies": {
+    "mocha": "~2.2.5"
+  }
+}

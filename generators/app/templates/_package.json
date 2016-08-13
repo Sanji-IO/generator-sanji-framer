@@ -1,0 +1,41 @@
+{
+  "name": "<%= appname %>",
+  "author": "<%= realname %> <<%= email %>>",
+  "version": "0.0.0",
+  "main": "index",
+  "scripts": {
+    "prebuild": "rimraf <%= uuid %> && mkdir <%= uuid %>",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.build.js --display-modules",
+    "postbuild": "cp ./app/component/component.resource.json ./<%= uuid %>/ && tar zcvf <%= uuid %>.tar.gz ./<%= uuid %>",
+    "start": "cross-env NODE_ENV=development node server/dev-server.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "~6.4.0",
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.9.0",
+    "cross-env": "~2.0.0",
+    "css-loader": "~0.23.1",
+    "eslint": "^3.2.2",
+    "eslint-loader": "^1.3.0",
+    "html-webpack-plugin": "~2.22.0",
+    "json-loader": "~0.5.4",
+    "ng-annotate-loader": "~0.1.0",
+    "node-bourbon": "~4.2.3",
+    "node-sass": "~3.8.0",
+    "postcss-loader": "~0.9.1",
+    "rimraf": "~2.5.4",
+    "sass-loader": "~4.0.0",
+    "style-loader": "~0.13.0",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  },
+  "keywords": [
+    "sanji"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "sanji-core-ui": "~1.16.2"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title><%= appname %> config</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic">
+</head>
+
+<body ng-controller="AppController as app">
+  <!--[if lt IE 8]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="container">
+    <md-toolbar layout>
+      <div class="md-toolbar-tools">
+        <h3><%= appname %> config</h3>
+      </div>
+      <md-input-container>
+      <md-select ng-model="app.currentLang"
+      ng-change="app.changeLang(app.currentLang)"
+      aria-label="select language">
+          <md-option ng-repeat="lang in app.langs" value="{{lang.key}}">
+            {{lang.label}}
+          </md-option>
+        </md-select>
+      </md-input-container>
+    </md-toolbar>
+
+    <<%= componentTplName %>-framer height="100%"></<%= componentTplName %>-framer>
+
+    <div layout="row" layout-align="center center">
+      <span class="md-caption">from the Sanji Team</span>
+    </div>
+  </div>
+
+</body>
+
+</html>
