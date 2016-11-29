@@ -6,12 +6,12 @@ cache:
 notifications:
   email: false
 node_js:
-  - '0.12'
+  - '6'
 branches:
   only:
     - master
 before_install:
-  - npm i -g npm@^2.0.0
+  - npm i -g npm@^3.0.0
 before_script:
   - npm prune
 script:

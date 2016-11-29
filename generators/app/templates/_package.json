@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "cpy-cli": "^1.0.1",
-    "sanji-common-devs-ui": "~1.0.2",
+    "sanji-common-devs-ui": "~1.0.4",
     "standard-version": "^3.0.0",
     "tar.gz": "^1.0.5"
   },
@@ -20,6 +20,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "sanji-core-ui": "~1.17.2"
+    "sanji-core-ui": "~1.17.17"
   }
 }

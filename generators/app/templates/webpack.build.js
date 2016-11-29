@@ -14,7 +14,6 @@ config.module.rules = [
 ].concat(config.module.rules);
 
 config.plugins.push(
-  new webpack.optimize.DedupePlugin(),
   new webpack.LoaderOptionsPlugin({
     minimize: true,
     debug: false,
