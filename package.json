@@ -1,6 +1,6 @@
 {
   "name": "generator-sanji-framer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Custom webapp for ThingsPro App Market",
   "license": "MIT",
   "main": "app/index.js",
